@@ -1,0 +1,139 @@
+.navbar {
+  padding: 0;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+  position: fixed;
+  left: 0;
+  z-index: 999;
+}
+
+.navbar__list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding-right: 2rem;
+  transition: 0.3s;
+}
+.navbar__icon {
+  font-size: 20px;
+  color: #fff;
+  display: none;
+}
+
+.navbar__list-item a {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff !important;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.navbar__list-item a:hover,
+.navbar__list-item a.activeNav {
+  border-color: #fff;
+  transition: 0.3s;
+}
+
+.navbar.visible {
+  background-color: rgba(0, 0, 0, 0.1);
+  top: 0;
+  transition: top 0.4s ease-out;
+}
+
+.navbar.hidden {
+  top: -100px;
+  transition: top 0.4s ease-out;
+}
+
+@media screen and (max-width: 550px) {
+  .navbar.open {
+    padding: 2rem 0;
+    height: fit-content;
+    background-color: transparent;
+    transition: 0.3s;
+  }
+  .navbar__list {
+    position: absolute;
+    top: 0;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+  .navbar.close .navbar__list {
+    top: -400px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .navbar.close .navbar__icon-menu {
+    display: block;
+    font-size: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  .navbar.open .navbar__list {
+    opacity: 1;
+  }
+  .navbar.open .navbar__icon-close {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 30px;
+
+    cursor: pointer;
+  }
+  .navbar__list {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100vh;
+  padding-bottom: 2.5rem;
+  border-right: 1px solid #fff;
+  z-index: 999;
+}
+
+.sidebar__content {
+  height: 100%;
+}
+
+.sidebar__socials {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sidebar__socials a {
+  color: #fff;
+  font-size: 25px;
+  transition: background 0.3s;
+  padding: 5px;
+  border-radius: 5px;
+}
+.sidebar__socials a:hover {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: background 0.3s;
+}

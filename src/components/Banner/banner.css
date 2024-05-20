@@ -1,0 +1,81 @@
+.banner {
+  position: relative;
+}
+
+.banner-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.banner-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 1rem;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.banner-content h1 {
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.banner-content p {
+  font-size: 20px;
+}
+
+.banner-content a {
+  color: #fff;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background 0.3s;
+}
+
+.banner-content a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: background 0.3s;
+}
+
+.banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+.banner-bg video {
+  height: 100vh;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.black-bg {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .banner-content h1 {
+    font-size: 40px;
+    text-align: cenver;
+  }
+  .banner-content p {
+    font-size: 16px;
+  }
+}
