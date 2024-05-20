@@ -62,7 +62,10 @@ const Chamales = () => {
                     <div className="work-item__text">
                       <h3 style={{ color: '#132A45' }}>IDEA</h3>
                       <p>
-                        ENDLESS SUMMER FOR EVERYONE <br />
+                        <b style={{ color: '#132A45' }}>
+                          ENDLESS SUMMER FOR EVERYONE{' '}
+                        </b>
+                        <br />
                         The new Aimant is launched in summer, and “Summer” is
                         also an unofficial name of the product.
                         <br />

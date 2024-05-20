@@ -18,7 +18,7 @@ const Haste = () => {
       <section className="work">
         <div className="container-fluid ">
           <div className="row">
-            <div className="col-lg-8 col-sm-12">
+            <div className="col-lg-8 col-md-7 col-sm-12">
               <div className="work-item">
                 {/* Title */}
                 <p
@@ -101,7 +101,7 @@ const Haste = () => {
             </div>
 
             {/* IMG */}
-            <div className="col-lg-4 col-sm-12 p-0">
+            <div className="col-lg-4 col-md-5 col-sm-12 p-0">
               <div className="work-item__img">
                 <img src={mainIMG} alt="" />
               </div>

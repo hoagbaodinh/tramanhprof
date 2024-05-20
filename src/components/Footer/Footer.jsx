@@ -39,17 +39,17 @@ const Footer = () => {
       }}
     >
       <motion.p variants={motionVar} className="footer-text">
-        I'm always here
+        I'm always here:
       </motion.p>
 
       <motion.div variants={motionVar} className="footer-bottom">
         <div className="footer-bottom-item">
           <FaPhoneAlt className="footer__social-icon" />
-          <span>(+84)70-2810-700</span>
+          <span>070 2810 700</span>
         </div>
         <div className="footer-bottom-item">
           <FaGoogle className="footer__social-icon" />
-          <span>ngtta@gmail.com</span>
+          <span>ngtta131@gmail.com</span>
         </div>
       </motion.div>
     </motion.footer>

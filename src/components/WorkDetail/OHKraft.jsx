@@ -96,7 +96,7 @@ const OHKraft = () => {
         <div className="container-fluid ">
           {curPJ && (
             <div className="row">
-              <div className="col-lg-7 col-sm-12">
+              <div className="col-md-7 col-sm-12">
                 <div className="work-item">
                   {/* Title */}
                   <p
@@ -140,14 +140,14 @@ const OHKraft = () => {
                   {/* GIF */}
                   <div className="work-item__gif">
                     <div className="row">
-                      <div className="col-lg-4 col-12 h-200px">
+                      <div className="col-md-4 col-12 honglai-img">
                         <img
                           src={curPJ?.img1}
                           className="work-item__gif-img"
                           alt=""
                         />
                       </div>
-                      <div className="col-lg-4 col-12 h-200px">
+                      <div className="col-md-4 col-12 honglai-img ">
                         {workId === 'honglai' && (
                           <img
                             src={curPJ.img2}
@@ -167,7 +167,7 @@ const OHKraft = () => {
                           />
                         )}
                       </div>
-                      <div className="col-lg-4 col-12 h-200px">
+                      <div className="col-md-4 col-12 honglai-img">
                         {workId === 'honglai' && (
                           <img
                             src={curPJ.img3}
@@ -193,7 +193,7 @@ const OHKraft = () => {
               </div>
 
               {/* IMG */}
-              <div className="col-lg-5 col-sm-12 p-0">
+              <div className="col-md-5 col-sm-12 p-md-0">
                 <div className="work-item__img">
                   <img src={curPJ?.imgCover} alt="" />
                 </div>

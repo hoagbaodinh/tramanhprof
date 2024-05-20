@@ -74,6 +74,7 @@ const WeAllNet = () => {
                         The Kitchen God will deliver an annual report on the
                         household’s activities to the Jade Emperor.
                         <br />
+                        <br />
                         Inspired by that culture,{' '}
                         <b style={{ color: '#7441EF' }}>
                           {' '}
