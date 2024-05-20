@@ -50,7 +50,11 @@ const Services = () => {
           >
             <div className="services__item ">
               <PiCloverFill className="services__item--icon" />
-              <span className="services__item--title">Idea Creation</span>
+              <span className="services__item--title">
+                Idea
+                <br />
+                Creation
+              </span>
               <span className="services__item--text">
                 Beside visuals, the content-idea seed facilitates the
                 germination of audience’s trust, empathy, and actions.
@@ -66,7 +70,11 @@ const Services = () => {
           >
             <div className="services__item ">
               <FaSeedling className="services__item--icon" />
-              <span className="services__item--title">Social Content</span>
+              <span className="services__item--title">
+                Social
+                <br />
+                Content
+              </span>
               <span className="services__item--text">
                 The dynamic seed challenging “the field” need to understand
                 seasonality and trends.
@@ -82,7 +90,11 @@ const Services = () => {
           >
             <div className="services__item ">
               <MdGrass className="services__item--icon" />
-              <span className="services__item--title">PerSonal Project</span>
+              <span className="services__item--title">
+                PerSonal
+                <br />
+                Project
+              </span>
               <span className="services__item--text">
                 The type of seed planted to shape my creativity into a tangible
                 product, without placing too much emphasis on commercial or

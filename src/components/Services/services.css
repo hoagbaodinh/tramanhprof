@@ -1,5 +1,5 @@
 .section__title {
-  padding: 50px 12px;
+  padding: 50px 12px 20px;
   color: #fff;
   font-size: 40px;
   text-transform: uppercase;
@@ -7,8 +7,8 @@
   text-align: center;
 }
 
-.services__content {
-  padding: 100px 0;
+.services {
+  padding-bottom: 50px;
 }
 .services__item {
   position: relative;
@@ -36,9 +36,18 @@
   color: #335005;
   text-align: center;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
 }
 
+.services__item--text {
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .services__item--title {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 550px) {
   .services {
     padding: 0 2rem;

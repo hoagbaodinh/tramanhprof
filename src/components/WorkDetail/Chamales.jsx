@@ -4,10 +4,6 @@ import { IoEyeOutline } from 'react-icons/io5';
 import { GoLightBulb } from 'react-icons/go';
 import { FiArrowLeft } from 'react-icons/fi';
 import { BsDot } from 'react-icons/bs';
-import gif1 from '../../assets/chalmes/gif4.webm';
-import gif2 from '../../assets/chalmes/gif1.webm';
-import gif3 from '../../assets/chalmes/gif2.webm';
-import gif4 from '../../assets/chalmes/gif3.webm';
 
 import './workPage.css';
 import { HashLink } from 'react-router-hash-link';
@@ -91,7 +87,7 @@ const Chamales = () => {
                     <div className="col-lg-3 col-sm-6">
                       {/* <img src={img1} className="work-item__gif-img" alt="" /> */}
                       <video
-                        src={gif1}
+                        src="https://res.cloudinary.com/papindev/video/upload/v1716178902/tramanh-pj/chalmes/rjbv0p1hqxlobo7k0xhk.webm"
                         autoPlay
                         muted
                         loop
@@ -100,7 +96,7 @@ const Chamales = () => {
                     </div>
                     <div className="col-lg-3 col-sm-6">
                       <video
-                        src={gif2}
+                        src="https://res.cloudinary.com/papindev/video/upload/v1716178902/tramanh-pj/chalmes/iqowkopkloahx9uj5wqp.webm"
                         autoPlay
                         muted
                         loop
@@ -109,7 +105,7 @@ const Chamales = () => {
                     </div>
                     <div className="col-lg-3 col-sm-6">
                       <video
-                        src={gif3}
+                        src="https://res.cloudinary.com/papindev/video/upload/v1716178902/tramanh-pj/chalmes/wsvfhtaaycxufzqfvelr.webm"
                         autoPlay
                         muted
                         loop
@@ -118,7 +114,7 @@ const Chamales = () => {
                     </div>
                     <div className="col-lg-3 col-sm-6">
                       <video
-                        src={gif4}
+                        src="https://res.cloudinary.com/papindev/video/upload/v1716178902/tramanh-pj/chalmes/z9vp1iyqhozel2xvpgwd.webm"
                         autoPlay
                         muted
                         loop
