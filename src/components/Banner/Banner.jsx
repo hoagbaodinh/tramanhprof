@@ -57,7 +57,15 @@ const Banner = () => {
             className="black-bg"
           ></motion.div>
 
-          <video autoPlay muted loop playsInline src={bgMov} type="video/mov" />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            src={bgMov}
+            preload="auto"
+            type="video/mov"
+          />
         </div>
         :
       </div>

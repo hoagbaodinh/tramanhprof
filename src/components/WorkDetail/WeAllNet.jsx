@@ -5,6 +5,7 @@ import { IoEyeOutline } from 'react-icons/io5';
 import { GoLightBulb } from 'react-icons/go';
 import { FiArrowLeft } from 'react-icons/fi';
 import img1 from '../../assets/weallnet/image4.jpg';
+import img2 from '../../assets/weallnet/image20.png';
 
 import './workPage.css';
 
@@ -14,7 +15,7 @@ const WeAllNet = () => {
       <section className="work">
         <div className="container-fluid ">
           <div className="row">
-            <div className="col-lg-8 col-sm-12">
+            <div className="col-lg-7 col-sm-12">
               <div className="work-item">
                 {/* Title */}
                 <p
@@ -92,9 +93,10 @@ const WeAllNet = () => {
             </div>
 
             {/* IMG */}
-            <div className="col-lg-4 col-sm-12 p-0">
+            <div className="col-lg-5 col-sm-12 p-0">
               <div className="work-item__img">
                 <img src={img1} alt="" />
+                <img src={img2} alt="" />
               </div>
             </div>
           </div>
