@@ -16,9 +16,9 @@ const Haste = () => {
   return (
     <div>
       <section className="work">
-        <div className="container-fluid ">
+        <div className="container-fluid work-item__container">
           <div className="row">
-            <div className="col-lg-8 col-md-7 col-sm-12">
+            <div className=" col-md-7 col-sm-12">
               <div className="work-item">
                 {/* Title */}
                 <p
@@ -82,17 +82,17 @@ const Haste = () => {
 
                 {/* GIF */}
                 <div className="work-item__gif">
-                  <div className="row">
-                    <div className="col-lg-3 col-sm-6">
+                  <div className="row work-item__gif-content ">
+                    <div className="col-lg-3 col-sm-6 ps-sm-0">
                       <img src={img1} className="work-item__gif-img" alt="" />
                     </div>
-                    <div className="col-lg-3 col-sm-6">
+                    <div className="col-lg-3 col-sm-6 ps-sm-0">
                       <img src={img2} className="work-item__gif-img" alt="" />
                     </div>
-                    <div className="col-lg-3 col-sm-6">
+                    <div className="col-lg-3 col-sm-6 ps-sm-0">
                       <img src={img3} className="work-item__gif-img" alt="" />
                     </div>
-                    <div className="col-lg-3 col-sm-6">
+                    <div className="col-lg-3 col-sm-6 ps-sm-0">
                       <img src={img4} className="work-item__gif-img" alt="" />
                     </div>
                   </div>
@@ -101,7 +101,7 @@ const Haste = () => {
             </div>
 
             {/* IMG */}
-            <div className="col-lg-4 col-md-5 col-sm-12 p-0">
+            <div className="col-md-5 col-sm-12 p-0">
               <div className="work-item__img">
                 <img src={mainIMG} alt="" />
               </div>

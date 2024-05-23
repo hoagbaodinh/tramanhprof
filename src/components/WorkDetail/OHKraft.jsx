@@ -93,7 +93,7 @@ const OHKraft = () => {
   return (
     <div>
       <section className="work">
-        <div className="container-fluid ">
+        <div className="container-fluid work-item__container">
           {curPJ && (
             <div className="row">
               <div className="col-md-7 col-sm-12">

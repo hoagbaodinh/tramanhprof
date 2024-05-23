@@ -14,9 +14,9 @@ const App = () => {
           index: true,
           element: <Home />,
         },
+        { path: 'work/:workId', element: <Work /> },
       ],
     },
-    { path: '/work/:workId', element: <Work /> },
   ]);
   return <RouterProvider router={router} />;
 };

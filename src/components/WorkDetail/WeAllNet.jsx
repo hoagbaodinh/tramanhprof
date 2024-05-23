@@ -14,7 +14,7 @@ const WeAllNet = () => {
   return (
     <div>
       <section className="work">
-        <div className="container-fluid ">
+        <div className="container-fluid work-item__container">
           <div className="row">
             <div className="col-lg-7 col-sm-12">
               <div className="work-item">

@@ -17,7 +17,7 @@ const LGPurifier = () => {
   return (
     <div>
       <section className="work">
-        <div className="container-fluid ">
+        <div className="container-fluid work-item__container">
           <div className="row">
             <div className="col-lg-8 col-sm-12">
               <div className="work-item">
@@ -67,24 +67,9 @@ const LGPurifier = () => {
                     </div>
                   </div>
 
-                  {/* Idea */}
-                  {/* <div className="work-item__item">
-                    <GoLightBulb className="work-item__icon" color="#BB271A" />
-                    <div className="work-item__text">
-                      <h3 style={{ color: '#BB271A' }}>IDEA</h3>
-                      <p>
-                        Leverage seasonal factors and pet-lover’s problems to
-                        approach customers through various angles that the
-                        product can solve or offer. Choose a headline that is
-                        triggering, friendly or easy to understand.
-                      </p>
-                      <br />
-                    </div>
-                  </div> */}
-
                   {/* GIF */}
                   <div className="work-item__gif">
-                    <div className="row">
+                    <div className="row work-item__gif-content">
                       <div className=" col-lg-5 col-12">
                         <video
                           src={gif1}

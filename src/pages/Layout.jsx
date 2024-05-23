@@ -28,7 +28,6 @@ const Layout = () => {
   }, []);
   return (
     <>
-      <Navigation />
       <main>
         <Outlet />
       </main>

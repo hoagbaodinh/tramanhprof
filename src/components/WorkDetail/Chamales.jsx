@@ -4,15 +4,17 @@ import { IoEyeOutline } from 'react-icons/io5';
 import { GoLightBulb } from 'react-icons/go';
 import { FiArrowLeft } from 'react-icons/fi';
 import { BsDot } from 'react-icons/bs';
-
-import './workPage.css';
 import { HashLink } from 'react-router-hash-link';
+
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+import './workPage.css';
 
 const Chamales = () => {
   return (
     <div>
       <section className="work">
-        <div className="container-fluid ">
+        <div className="container-fluid work-item__container ">
           <div className="row">
             <div className="col-lg-8 col-sm-12">
               <div className="work-item">
@@ -73,7 +75,6 @@ const Chamales = () => {
                         <br /> <BsDot /> Suitability? For Everyone.
                         <br /> <BsDot /> Durability? Endless.
                       </p>
-                      <br />
                     </div>
                   </div>
                 </div>
@@ -143,15 +144,14 @@ const Chamales = () => {
                   src="https://res.cloudinary.com/papindev/video/upload/v1715929352/tramanh-pj/vtyrp3adcgnfhjmmq3ky.mp4"
                   type="video/mp4"
                 />
+                <small className="pt-3">
+                  <i>
+                    Video tells a story about summer in the natural way. Not
+                    only the story about a summer occasion, but also the
+                    storytelling about product through visual frame
+                  </i>
+                </small>
               </div>
-              <small>
-                <i>
-                  The video tells a story about summer in the natural way. It’s
-                  not only the story about a summer occasion, but also the
-                  storytelling about product through visual frame. its double
-                  meaning.
-                </i>
-              </small>
             </div>
           </div>
 
