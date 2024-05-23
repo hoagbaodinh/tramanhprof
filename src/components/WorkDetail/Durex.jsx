@@ -3,7 +3,7 @@ import { VscTarget } from 'react-icons/vsc';
 import { IoEyeOutline } from 'react-icons/io5';
 import { GoLightBulb } from 'react-icons/go';
 import { FiArrowLeft } from 'react-icons/fi';
-import img1 from '../../assets/durex/image5.jpg';
+import img1 from '../../assets/durex/img-main1.webp';
 import gif1 from '../../assets/durex/gif1.webm';
 
 import './workPage.css';

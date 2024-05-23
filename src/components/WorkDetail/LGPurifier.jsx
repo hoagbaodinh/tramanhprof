@@ -6,9 +6,9 @@ import { GoLightBulb } from 'react-icons/go';
 import { FiArrowLeft } from 'react-icons/fi';
 import gif1 from '../../assets/lg/lkk/gif1.webm';
 import gif2 from '../../assets/lg/lkk/gif2.webm';
-import img3 from '../../assets/lg/lkk/image24.png';
-import img4 from '../../assets/lg/lkk/image26.png';
-import img5 from '../../assets/lg/lkk/image32.png';
+import img3 from '../../assets/lg/lkk/img1.webp';
+import img4 from '../../assets/lg/lkk/img2.webp';
+import img5 from '../../assets/lg/lkk/img3.webp';
 
 import './workPage.css';
 import { HashLink } from 'react-router-hash-link';

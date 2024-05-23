@@ -3,11 +3,11 @@ import { VscTarget } from 'react-icons/vsc';
 import { IoEyeOutline } from 'react-icons/io5';
 import { GoLightBulb } from 'react-icons/go';
 import { FiArrowLeft } from 'react-icons/fi';
-import mainIMG from '../../assets/haste/image8.jpg';
-import img1 from '../../assets/haste/image13.jpg';
-import img2 from '../../assets/haste/image14.jpg';
-import img3 from '../../assets/haste/image15.jpg';
-import img4 from '../../assets/haste/image2.png';
+import mainIMG from '../../assets/haste/img-main.webp';
+import img1 from '../../assets/haste/img1.webp';
+import img2 from '../../assets/haste/img2.webp';
+import img3 from '../../assets/haste/img3.webp';
+import img4 from '../../assets/haste/img4.webp';
 
 import './workPage.css';
 import { HashLink } from 'react-router-hash-link';

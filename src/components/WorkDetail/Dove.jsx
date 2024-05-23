@@ -4,11 +4,11 @@ import { VscTarget } from 'react-icons/vsc';
 import { IoEyeOutline } from 'react-icons/io5';
 import { GoLightBulb } from 'react-icons/go';
 import { FiArrowLeft } from 'react-icons/fi';
-import mainIMG from '../../assets/dove/image23.png';
-import img1 from '../../assets/dove/image6.png';
+import mainIMG from '../../assets/dove/img-main.webp';
+import img1 from '../../assets/dove/img1.webp';
 import gif1 from '../../assets/dove/gif1.webm';
-import dove1 from '../../assets/dove/dove1.jpg';
-import dove2 from '../../assets/dove/dove2.jpg';
+import dove1 from '../../assets/dove/dove1.webp';
+import dove2 from '../../assets/dove/dove2.webp';
 
 import './workPage.css';
 

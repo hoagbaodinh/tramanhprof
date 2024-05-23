@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import bgMov from '../../assets/banner.webm';
+import bgMov from '../../assets/banner2.webm';
 import { Element } from 'react-scroll';
 import './banner.css';
 

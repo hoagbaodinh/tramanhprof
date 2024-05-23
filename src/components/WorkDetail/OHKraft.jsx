@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { VscTarget } from 'react-icons/vsc';
 import { GoLightBulb } from 'react-icons/go';
 import { FiArrowLeft } from 'react-icons/fi';
-import imgHLMain from '../../assets/ohkraft/honglai/image-main.png';
-import imgHL1 from '../../assets/ohkraft/honglai/image30.png';
-import imgHL2 from '../../assets/ohkraft/honglai/image35.png';
-import imgHL3 from '../../assets/ohkraft/honglai/image36.png';
-import imgSCMain from '../../assets/ohkraft/saychesse/image-main.png';
-import imgSC1 from '../../assets/ohkraft/saychesse/image29.png';
+import imgHLMain from '../../assets/ohkraft/honglai/img-main.webp';
+import imgHL1 from '../../assets/ohkraft/honglai/img1.webp';
+import imgHL2 from '../../assets/ohkraft/honglai/img2.webp';
+import imgHL3 from '../../assets/ohkraft/honglai/img3.webp';
+import imgSCMain from '../../assets/ohkraft/saychesse/img-main.webp';
+import imgSC1 from '../../assets/ohkraft/saychesse/img1.webp';
 import gifSC1 from '../../assets/ohkraft/saychesse/gif1.webm';
 import gifSC2 from '../../assets/ohkraft/saychesse/gif2.webm';
 

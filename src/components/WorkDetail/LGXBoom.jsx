@@ -4,10 +4,10 @@ import { IoEyeOutline } from 'react-icons/io5';
 import { GoLightBulb } from 'react-icons/go';
 import { FiArrowLeft } from 'react-icons/fi';
 import img1 from '../../assets/lg/loa/gif1.webm';
-import img2 from '../../assets/lg/loa/image22.png';
-import img3 from '../../assets/lg/loa/image10.png';
-import img4 from '../../assets/lg/loa/image16.png';
-import img5 from '../../assets/lg/loa/image19.png';
+import img2 from '../../assets/lg/loa/img1.webp';
+import img3 from '../../assets/lg/loa/loa.webp';
+import img4 from '../../assets/lg/loa/loa2.webp';
+import img5 from '../../assets/lg/loa/loa3.webp';
 
 import './workPage.css';
 import { HashLink } from 'react-router-hash-link';

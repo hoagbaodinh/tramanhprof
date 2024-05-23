@@ -4,8 +4,8 @@ import { VscTarget } from 'react-icons/vsc';
 import { IoEyeOutline } from 'react-icons/io5';
 import { GoLightBulb } from 'react-icons/go';
 import { FiArrowLeft } from 'react-icons/fi';
-import img1 from '../../assets/weallnet/image4.jpg';
-import img2 from '../../assets/weallnet/image20.png';
+import img1 from '../../assets/weallnet/img1.webp';
+import img2 from '../../assets/weallnet/img2.webp';
 
 import './workPage.css';
 import { HashLink } from 'react-router-hash-link';
