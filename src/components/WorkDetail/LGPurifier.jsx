@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import { VscTarget } from 'react-icons/vsc';
 import { IoEyeOutline } from 'react-icons/io5';
 import { GoLightBulb } from 'react-icons/go';
@@ -11,19 +11,9 @@ import img4 from '../../assets/lg/lkk/image26.png';
 import img5 from '../../assets/lg/lkk/image32.png';
 
 import './workPage.css';
+import { HashLink } from 'react-router-hash-link';
 
 const LGPurifier = () => {
-  const navigate = useNavigate();
-  const backToWork = (e) => {
-    e.preventDefault();
-    navigate('/');
-    // const violation = document.querySelector('#work');
-    // console.log(violation);
-    // window.scrollTo({
-    //   top: violation.offsetTop,
-    //   behavior: 'smooth',
-    // });
-  };
   return (
     <div>
       <section className="work">
@@ -164,9 +154,9 @@ const LGPurifier = () => {
           </div>
 
           <div className="work__back">
-            <button onClick={backToWork} style={{ background: '#BB271A' }}>
+            <HashLink to={'/#work'} style={{ background: '#BB271A' }}>
               <FiArrowLeft /> Back to my works
-            </button>
+            </HashLink>
           </div>
         </div>
       </section>

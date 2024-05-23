@@ -79,14 +79,14 @@ const Chamales = () => {
                 </div>
 
                 {/* GIF */}
-                <div className="work-item__gif">
+                <div className="work-item__gif ">
                   <small>
                     <i className="text-center">
                       “Summer is for everyone, as long as your heart have a
                       place for it.” - script
                     </i>
                   </small>
-                  <div className="row">
+                  <div className="row work-item__gif-content">
                     <div className="col-lg-3 col-sm-6">
                       {/* <img src={img1} className="work-item__gif-img" alt="" /> */}
                       <video

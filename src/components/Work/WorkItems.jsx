@@ -11,13 +11,13 @@ const WorkItems = ({ works }) => {
     <AnimatePresence>
       {curWorks.length !== 0 &&
         curWorks.map((work, i) => (
-          <div className="col-md-4" key={i}>
+          <div className="col-md-4 col-sm-6 col-12" key={i}>
             <motion.div
               variants={{
                 hidden: { opacity: 0, scale: 0.5 },
                 visible: { opacity: 1, scale: 1 },
               }}
-              initial={false}
+              initial={'hidden'}
               animate="visible"
               exit="hidden"
             >

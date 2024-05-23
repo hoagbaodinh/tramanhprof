@@ -11,8 +11,10 @@ import img5 from '../../assets/lg/loa/image19.png';
 
 import './workPage.css';
 import { HashLink } from 'react-router-hash-link';
+import { useNavigate } from 'react-router-dom';
 
 const LGXBoom = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <section className="work">

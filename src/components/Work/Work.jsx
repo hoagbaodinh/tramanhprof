@@ -11,9 +11,11 @@ import weallnet from '../../assets/weallnet/thumb.png';
 import honglai from '../../assets/ohkraft/honglai/thumb.png';
 import saycheese from '../../assets/ohkraft/saychesse/thumb.png';
 import bgIMG from '../../assets/work-bg.png';
+import { productListActions } from '../../store';
 import './work.css';
 import { motion } from 'framer-motion';
 import WorkItems from './WorkItems';
+import { useDispatch, useSelector } from 'react-redux';
 
 const works = [
   {
@@ -87,19 +89,29 @@ const motionVar = {
 };
 
 const Work = () => {
-  const [cateIsShowing, setCateIsShowing] = useState('idea');
+  // Lay category tu productListSlice
+  const category = useSelector((state) => state.productList.category);
+
+  // Dispatch
+  const dispatch = useDispatch();
+
   const [projectIsShowing, setProjectIsShowing] = useState([]);
+
   useEffect(() => {
-    if (cateIsShowing === 'idea') {
-      setProjectIsShowing(works.filter((work) => work.cate === 'idea'));
-    } else if (cateIsShowing === 'social') {
-      setProjectIsShowing(works.filter((work) => work.cate === 'social'));
-    } else if (cateIsShowing === 'personal') {
-      setProjectIsShowing(works.filter((work) => work.cate === 'personal'));
-    }
-  }, [cateIsShowing]);
-  console.log(cateIsShowing);
+    setProjectIsShowing([]);
+    setTimeout(() => {
+      const filteredWorks = works.filter((work) => work.cate === category);
+      setProjectIsShowing(filteredWorks);
+    }, 500);
+  }, [category]);
   console.log(projectIsShowing);
+  const handleClick = (cate) => {
+    // Thay doi state voi muc vua click
+    console.log(cate);
+
+    dispatch(productListActions.changeCate(cate));
+    // window.scrollTo(0, 300);
+  };
   return (
     <Element name="work" className="works" id="work">
       <motion.div
@@ -121,28 +133,28 @@ const Work = () => {
         </motion.div>
         <motion.div variants={motionVar} className="works-cate">
           <button
-            className={cateIsShowing === 'idea' ? 'activeCate' : ''}
+            className={category === 'idea' ? 'activeCate' : ''}
             onClick={(e) => {
               e.preventDefault();
-              setCateIsShowing('idea');
+              handleClick('idea');
             }}
           >
             Idea Creation
           </button>
           <button
-            className={cateIsShowing === 'social' ? 'activeCate' : ''}
+            className={category === 'social' ? 'activeCate' : ''}
             onClick={(e) => {
               e.preventDefault();
-              setCateIsShowing('social');
+              handleClick('social');
             }}
           >
             Social Content
           </button>
           <button
-            className={cateIsShowing === 'personal' ? 'activeCate' : ''}
+            className={category === 'personal' ? 'activeCate' : ''}
             onClick={(e) => {
               e.preventDefault();
-              setCateIsShowing('personal');
+              handleClick('personal');
             }}
           >
             Personal Project

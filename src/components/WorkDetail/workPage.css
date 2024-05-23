@@ -80,6 +80,9 @@
   width: fit-content;
   height: auto;
   margin-left: 30px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
 }
 
 .work__back a,
@@ -97,7 +100,13 @@ button {
 .work-item__gif > .row > .honglai-img {
   overflow: hidden;
   display: flex;
-  align-items: center;
+}
+.work-item__gif-content {
+  height: 280px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  justify-content: start;
 }
 
 .fit-image {
@@ -114,5 +123,13 @@ button {
   }
   .work-item__text p {
     font-size: 16px;
+  }
+  .work-item__gif-content {
+    height: 500px;
+    flex-wrap: nowrap;
+  }
+  .work-item__gif-content > div {
+    width: 90%;
+    height: 100%;
   }
 }

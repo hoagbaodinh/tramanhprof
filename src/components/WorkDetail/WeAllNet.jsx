@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import { VscTarget } from 'react-icons/vsc';
 import { IoEyeOutline } from 'react-icons/io5';
 import { GoLightBulb } from 'react-icons/go';
@@ -8,6 +8,7 @@ import img1 from '../../assets/weallnet/image4.jpg';
 import img2 from '../../assets/weallnet/image20.png';
 
 import './workPage.css';
+import { HashLink } from 'react-router-hash-link';
 
 const WeAllNet = () => {
   return (
@@ -103,9 +104,9 @@ const WeAllNet = () => {
           </div>
 
           <div className="work__back">
-            <Link to={'/'} style={{ background: '#7441EF' }}>
+            <HashLink to={'/#work'} style={{ background: '#7441EF' }}>
               <FiArrowLeft /> Back to my works
-            </Link>
+            </HashLink>
           </div>
         </div>
       </section>

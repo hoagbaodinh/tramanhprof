@@ -130,6 +130,7 @@ const OHKraft = () => {
                         <h3 style={{ color: '#c4ab89' }}>IDEA</h3>
                         <p>
                           <b style={{ color: '#c4ab89' }}>{curPJ?.ideaTitle}</b>{' '}
+                          <br />
                           {curPJ?.idea}
                         </p>
                         <br />
@@ -139,7 +140,7 @@ const OHKraft = () => {
 
                   {/* GIF */}
                   <div className="work-item__gif">
-                    <div className="row">
+                    <div className="row work-item__gif-content">
                       <div className="col-md-4 col-12 honglai-img">
                         <img
                           src={curPJ?.img1}

@@ -91,7 +91,7 @@ const Vinfruit = () => {
 
                 {/* GIF */}
                 <div className="work-item__gif">
-                  <div className="row">
+                  <div className="row work-item__gif-content">
                     <div className="col-lg-3 col-sm-6">
                       <video
                         src={gif1}
