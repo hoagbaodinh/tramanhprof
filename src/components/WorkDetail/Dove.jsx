@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { VscTarget } from 'react-icons/vsc';
 import { IoEyeOutline } from 'react-icons/io5';
 import { GoLightBulb } from 'react-icons/go';
 import { FiArrowLeft } from 'react-icons/fi';
+import { FaAngleDoubleDown } from 'react-icons/fa';
+
 import mainIMG from '../../assets/dove/img-main.webp';
 import img1 from '../../assets/dove/img1.webp';
 import gif1 from '../../assets/dove/gif1.webm';
@@ -13,6 +15,19 @@ import dove2 from '../../assets/dove/dove2.webp';
 import './workPage.css';
 
 const Dove = () => {
+  const [isShowing, setIsShowing] = useState(false);
+
+  const clickHandler = (e) => {
+    e.preventDefault();
+    setIsShowing(true);
+    window.scrollTo(0, 800);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setIsShowing(true);
+    });
+  }, []);
   return (
     <div>
       <section className="work">
@@ -107,6 +122,12 @@ const Dove = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* View more */}
+                <div className="work-item__extra" onClick={clickHandler}>
+                  <span style={{ color: '#DE9D9B' }}>view more</span>
+                  <FaAngleDoubleDown color="#DE9D9B" />
+                </div>
               </div>
             </div>
 
@@ -123,11 +144,13 @@ const Dove = () => {
             <img src={dove2} alt="" className="w-100 mt-5" />
           </div>
 
-          <div className="work__back">
-            <HashLink to={'/#work'} smooth style={{ background: '#DE9D9B' }}>
-              <FiArrowLeft /> Back to my works
-            </HashLink>
-          </div>
+          {isShowing && (
+            <div className="work__back">
+              <HashLink to={'/#work'} smooth style={{ background: '#DE9D9B' }}>
+                <FiArrowLeft /> Back to my works
+              </HashLink>
+            </div>
+          )}
         </div>
       </section>
     </div>

@@ -144,13 +144,13 @@ const Chamales = () => {
                   src="https://res.cloudinary.com/papindev/video/upload/v1715929352/tramanh-pj/vtyrp3adcgnfhjmmq3ky.mp4"
                   type="video/mp4"
                 />
-                <small className="pt-3">
+                {/* <small className="pt-3">
                   <i>
                     Video tells a story about summer in the natural way. Not
                     only the story about a summer occasion, but also the
                     storytelling about product through visual frame
                   </i>
-                </small>
+                </small> */}
               </div>
             </div>
           </div>

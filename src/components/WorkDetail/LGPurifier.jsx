@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { VscTarget } from 'react-icons/vsc';
 import { IoEyeOutline } from 'react-icons/io5';
@@ -12,8 +12,21 @@ import img5 from '../../assets/lg/lkk/img3.webp';
 
 import './workPage.css';
 import { HashLink } from 'react-router-hash-link';
+import { FaAngleDoubleDown } from 'react-icons/fa';
 
 const LGPurifier = () => {
+  const [isShowing, setIsShowing] = useState(false);
+
+  const clickHandler = (e) => {
+    e.preventDefault();
+    setIsShowing(true);
+    window.scrollTo(0, 800);
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setIsShowing(true);
+    });
+  }, []);
   return (
     <div>
       <section className="work">
@@ -99,6 +112,12 @@ const LGPurifier = () => {
                       </div> */}
                     </div>
                   </div>
+
+                  {/* View more */}
+                  <div className="work-item__extra" onClick={clickHandler}>
+                    <span style={{ color: '#BB271A' }}>view more</span>
+                    <FaAngleDoubleDown color="#BB271A" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -122,7 +141,7 @@ const LGPurifier = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 d-flex align-items-center">
               <div className="work-item__item">
                 <GoLightBulb className="work-item__icon" color="#BB271A" />
                 <div className="work-item__text">
@@ -138,11 +157,13 @@ const LGPurifier = () => {
             </div>
           </div>
 
-          <div className="work__back">
-            <HashLink to={'/#work'} style={{ background: '#BB271A' }}>
-              <FiArrowLeft /> Back to my works
-            </HashLink>
-          </div>
+          {isShowing && (
+            <div className="work__back">
+              <HashLink to={'/#work'} style={{ background: '#BB271A' }}>
+                <FiArrowLeft /> Back to my works
+              </HashLink>
+            </div>
+          )}
         </div>
       </section>
     </div>
